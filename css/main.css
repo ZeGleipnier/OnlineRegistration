@@ -1,0 +1,196 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+form {
+  border-top: 4px solid #2D3945;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+  margin: 2px 5%;
+}
+
+fieldset {
+  border: 0;
+  margin: 2px 0;
+  padding: 0;
+}
+
+legend {
+  border-top: 2px solid #2D3945;
+  width: 100%;
+  padding: 0;
+}
+
+/**  Title Decoration  **/
+
+h1 {
+  background-color: #2D3945;
+  color: #FFF;
+  max-width: 100%;
+  margin: 0;
+  font-size: 1.1em;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+/**  Main Header Decoration  **/
+
+.header-text {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.top-description {
+  display: block;
+  text-align: center;
+  padding-bottom: 2em;
+  margin: 0 5%;
+}
+
+/** Paragraph Decoration **/
+
+p, option, select, label {
+  color: #AAAFB4;
+}
+
+
+/** Contact Decoration **/
+
+.contact-header {
+  display: block;
+  font-size:  1.25em;
+  padding: 0.75em 0;
+  margin: 0 0;
+  width: 100%;
+}
+
+/** Text Input Decoration **/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  font-size: 1em;
+  text-align: right;
+  background-color: #E4E4E4;
+  border: none;
+  margin: 1em 5%;
+  padding: 15px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.contact-label {
+  margin: 0 5%;
+  color: #8C8C8C;
+}
+
+.field-zip {
+  max-width: 40%;
+}
+
+input[type="text"],
+input[type="email"] {
+  color: #8C8C8C;
+  font-style: italic;
+}
+
+/** Field Focus State **/
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus, 
+select:focus {
+  text-align: left;
+  font-style: normal;
+  background-color: #F3F3F3;
+  border: 2px solid #2D3945;
+}
+
+/** Footer Text decoration **/
+
+.footer-news {
+  color: #8C8C8C;
+}
+
+.footer-text {
+  color: #8C8C8C;
+  margin: 0.75em;
+}
+
+.footer-box {
+  margin: 1em 0.75em;
+}
+
+.footer-copy {
+  margin: 0.75em;
+  text-align: center;
+  font-style: italic;
+}
+
+textarea {
+  background-color: #E4E4E4;
+  border: none;
+  margin: 10px 0 20px 0;
+  padding: 2em 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/** Button Styling **/
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 19px 39px 18px 39px;
+  background-color: #4EBBB5;
+  width: 100%;
+  color: #FFF;
+  margin: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/** Media Query Breakpoint **/
+
+@media (min-width: 760px) {
+
+  form {
+    margin: 2px 10%;
+  }
+  
+  .contact-label {
+    display: inline-block;
+    margin: 0;
+    width: 20%;
+  }
+
+  .field-zip {
+    max-width: 20%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+     display: inline-block;
+     margin: 8px 0;
+     width: 70%;
+     -ms-box-sizing: content-box;
+     -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+     box-sizing: content-box;
+  }
+  
+  button {
+    margin: 0;
+    width: 100%;
+    padding: 19px 39px 18px 39px;
+}
