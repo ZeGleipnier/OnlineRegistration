@@ -19,13 +19,13 @@
      <fieldset>
          <legend><span class="contact-header">Contact Information</span></legend>
          
-           <label class="contact-label" for="field-name">Full Name</label><input type="text" placeholder="Required" id="field-name"><br>
-           <label class="contact-label" for="field-email">Email Address</label><input type="email" placeholder="Required" id="field-email"><br>
-           <label class="contact-label" for="field-phone">Phone Number<br></label><input type="tel" id="field-phone"><br>
-           <label class="contact-label" for="field-street">Street Address<br></label><input type="text" id="field-street"><br>
-           <label class="contact-label" for="field-city">City<br></label><input type="text" id="field-city"><br>
+           <label class="contact-label" for="field-name">Full Name</label><input type="text" placeholder="Required" name="fullname" id="field-name"><br>
+           <label class="contact-label" for="field-email">Email Address</label><input type="email" name="email" id="field-email" placeholder="Required"><br>
+           <label class="contact-label" for="field-phone">Phone Number<br></label><input type="tel" name="phone" id="field-phone"><br>
+           <label class="contact-label" for="field-street">Street Address<br></label><input type="text" name="street-address" id="field-street"><br>
+           <label class="contact-label" for="field-city">City<br></label><input type="text" name="city" id="field-city"><br>
            <label class="contact-label" for="field-state">State<br></label>
-           <select id="field-state" class="state dropdown">
+           <select id="field-state" name="state-dropdown" class="state dropdown">
             <option value="">Choose State</option> 
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
@@ -83,21 +83,20 @@
          
       </fieldset> 
       <fieldset>  
-       <legend><span class="newsletter-box"></span></legend>
-         <h2 class="contact-header">Newsletter</h2>
+       <legend><span class="newsletter-box">Newsletter</span></legend>
          <p class="footer-text">Select the newsletters you would like to receive</p>
          <div class="footer-box">
-           <input type="checkbox" id="check1"><label class="footer-news" for="check1">HTML News</label><br>
-           <input type="checkbox" id="check2"><label class="footer-news" for="check2">CSS News</label><br>
-           <input type="checkbox" id="check3"><label class="footer-news" for="check3">Javascript News</label><br>
+           <input type="checkbox" name="" id="check1"><label class="footer-news" for="check1">HTML News</label><br>
+           <input type="checkbox" name="" id="check2"><label class="footer-news" for="check2">CSS News</label><br>
+           <input type="checkbox" name="" id="check3"><label class="footer-news" for="check3">Javascript News</label><br>
          </div>
          <p class="footer-text">Newsletter format</p>
          <div class="footer-box">
            <input type="radio" name="radio" id="radio1"><label class="footer-news" for="radio1">HTML</label><br>
            <input type="radio" name="radio" id="radio2"><label class="footer-news" for="radio2">Plain text</label><br>
          </div>          
-         <p class="footer-text">Other topics you'd like to hear about</p>
-         <textarea id="comments"></textarea>
+         <label class="footer-text" for="comments">Other topics you'd like to hear about</label>
+         <textarea id="comments" ></textarea>
        
         
        <button type="submit">Sign Up</button>

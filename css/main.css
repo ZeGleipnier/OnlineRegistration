@@ -1,3 +1,5 @@
+/** High level rules **/
+
 * {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -21,6 +23,22 @@ legend {
   width: 100%;
   padding: 0;
 }
+/** DNR rules **/
+
+.contact-header, button, textarea, .newsletter-box {
+  width: 100%;
+}
+
+.footer-news, 
+.footer-text, 
+input[type="text"],
+input[type="email"], 
+.contact-label {
+  color: #8C8C8C;
+}
+
+
+
 
 /**  Title Decoration  **/
 
@@ -54,19 +72,21 @@ body {
 
 /** Paragraph Decoration **/
 
-p, option, select, label {
+p, 
+option, 
+select, 
+label {
   color: #AAAFB4;
 }
 
 
 /** Contact Decoration **/
 
-.contact-header {
+.contact-header, .newsletter-box {
   display: block;
   font-size:  1.25em;
   padding: 0.75em 0;
   margin: 0 0;
-  width: 100%;
 }
 
 /** Text Input Decoration **/
@@ -87,7 +107,6 @@ select {
 
 .contact-label {
   margin: 0 5%;
-  color: #8C8C8C;
 }
 
 .field-zip {
@@ -96,7 +115,6 @@ select {
 
 input[type="text"],
 input[type="email"] {
-  color: #8C8C8C;
   font-style: italic;
 }
 
@@ -115,12 +133,7 @@ select:focus {
 
 /** Footer Text decoration **/
 
-.footer-news {
-  color: #8C8C8C;
-}
-
 .footer-text {
-  color: #8C8C8C;
   margin: 0.75em;
 }
 
@@ -139,7 +152,6 @@ textarea {
   border: none;
   margin: 10px 0 20px 0;
   padding: 2em 0;
-  width: 100%;
   border-radius: 5px;
 }
 
@@ -150,7 +162,6 @@ button {
   font-weight: bold;
   padding: 19px 39px 18px 39px;
   background-color: #4EBBB5;
-  width: 100%;
   color: #FFF;
   margin: 0;
   border-radius: 5px;
@@ -191,6 +202,6 @@ button {
   
   button {
     margin: 0;
-    width: 100%;
     padding: 19px 39px 18px 39px;
+  }
 }
